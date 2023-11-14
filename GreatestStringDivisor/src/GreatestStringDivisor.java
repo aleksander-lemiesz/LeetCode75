@@ -4,12 +4,12 @@ public class GreatestStringDivisor {
         String comb2 = str2 + str1;
         if (!comb1.equals(comb2))
             return "";
-        return str1.substring(0,gcd(str1.length(),str2.length()));
+        return str1.substring(0, gcd(str1.length(), str2.length()));
     }
 
     private int gcd(int x, int y) {
         if (y == 0)
             return x;
-        return gcd(y, x%y);
+        return gcd(y, x % y);
     }
 }
